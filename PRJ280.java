@@ -123,7 +123,9 @@ public class PRJ280 extends Application{
 		name = fName.readLine();
 		
 		for(int i = 0; i < PRJ280.size(); i++) {
-			PRJ280.get(i).printSoldier();
+			if(PRJ280.get(i).getname().equals(name)) { 
+				PRJ280.get(i).printSoldier();
+			}
 		}
 	}
 		public static String SoldierOutput() {
