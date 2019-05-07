@@ -43,7 +43,7 @@ public class PRJ280 extends Application{
 		
 		
 		while (true) {
-			System.out.println("[1] Add Soldier"); //Brings up text fields to add new object
+			System.out.println("[1] Print Soldier"); //Brings up text fields to add new object
 			System.out.println("[2] View Soldiers"); //Shows all entries
 			System.out.println("[3] View Soldier Info"); 
 			System.out.println("[4] Quit"); // Ends program
