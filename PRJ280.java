@@ -56,13 +56,15 @@ public class PRJ280 extends Application{
 			}
 			switch (input) {
 			case "1":
-				String path = "./src\\CMPS280\\FinalProject\\OUTPUT\\output.txt";
+				String path = "./src\\CMPS280\\FinalProject\\OUTPUT\\output.csv";
+				BufferedWriter writer = new BufferedWriter(new FileWriter(path)); 
 				
-				 String str = SoldierOutput();
-				    BufferedWriter writer = new BufferedWriter(new FileWriter(path));
-				    writer.write(str);
-				     
-				    writer.close();
+				for(int i = 0; i < PRJ280.size(); i++) {
+					
+					writer.write(PRJ280.get(i).outputSoldier());
+				}
+				
+				writer.close();
 				break;
 			case "2":
 				viewSoldier();
