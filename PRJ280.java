@@ -32,7 +32,7 @@ import java.io.Writer;
  
 
 public class PRJ280 extends Application{
-	static ArrayList<Soldier> PRJ280 = new ArrayList<Soldier>();
+	static ArrayList<Soldier> PRJ280 = new ArrayList<Soldier>(); // Used to hold objects with the Soldier data type
 	public int list = 0;
 	
 	public static void main(String[] args) throws IOException {
@@ -43,9 +43,9 @@ public class PRJ280 extends Application{
 		
 		
 		while (true) {
-			System.out.println("[1] Add Soldier"); 
-			System.out.println("[2] View Soldiers"); //TODO Tie list value to ArrayList.length()
-			System.out.println("[3] View Soldier Info"); // TODO Not Constructed
+			System.out.println("[1] Add Soldier"); //Brings up text fields to add new object
+			System.out.println("[2] View Soldiers"); //Shows all entries
+			System.out.println("[3] View Soldier Info"); 
 			System.out.println("[4] Quit"); // Ends program
 			System.out.println("Input : ");
 			
@@ -99,7 +99,7 @@ public class PRJ280 extends Application{
 		//System.out.println("Soldier Speciality: ");
 		speciality = string4;
 		
-		Soldier entry;
+		Soldier entry; // Allows for the program to add multiple entries
 		entry = new deploysoldier(name, gender, deploytime, speciality);
 		PRJ280.add(entry);
 		list++;
@@ -222,7 +222,7 @@ public class PRJ280 extends Application{
 	}	    
 }   
 	
-abstract class Soldier { //Make abstract
+abstract class Soldier { 
 	String name;
 	String gender;
 	String deploytime;
